@@ -768,7 +768,7 @@ const AdminView = ({ onGenerateCoupon, allCoupons, onCopyCouponCode, onUpdateCou
 
       {/* List of All Coupons (shown when form is not visible) */}
       {!showForm && (
-        <div className="mt-16 p-8 bg-gray-50 rounded-2xl shadow-xl border border-gray-200">
+        <div className="mt-16 p-4 bg-gray-50 rounded-2xl shadow-xl border border-gray-200">
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-2xl font-bold text-gray-800">All Generated Coupons</h3>
             {/* Button to create a new coupon */}
@@ -2202,13 +2202,13 @@ const FlatForm = () => {
           <div ref={toggleContainerRef} className="relative flex bg-gray-200 rounded-full p-1 shadow-inner max-w-sm w-full">
             {/* Radio inputs for switching POV */}
             <input type="radio" name="pov" value="admin" id="povAdmin" className="hidden" checked={currentPov === 'admin'} onChange={() => setCurrentPov('admin')} />
-            <label htmlFor="povAdmin" className="flex-1 text-center py-3 px-6 text-lg font-semibold text-gray-700 cursor-pointer rounded-full transition-colors duration-300 relative z-20">Admin</label>
+            <label htmlFor="povAdmin" className="flex-1 text-center py-3 px-4 text-sm font-semibold text-gray-700 cursor-pointer rounded-full transition-colors duration-300 relative z-20">Admin</label>
 
             <input type="radio" name="pov" value="golfer" id="povGolfer" className="hidden" checked={currentPov === 'golfer'} onChange={() => setCurrentPov('golfer')} />
-            <label htmlFor="povGolfer" className="flex-1 text-center py-3 px-6 text-lg font-semibold text-gray-700 cursor-pointer rounded-full transition-colors duration-300 relative z-20">Golfer</label>
+            <label htmlFor="povGolfer" className="flex-1 text-center py-3 px-4 text-sm font-semibold text-gray-700 cursor-pointer rounded-full transition-colors duration-300 relative z-20">Golfer</label>
 
             <input type="radio" name="pov" value="golf-course" id="povGolfCourse" className="hidden" checked={currentPov === 'golf-course'} onChange={() => setCurrentPov('golf-course')} />
-            <label htmlFor="povGolfCourse" className="flex-1 text-center py-3 px-6 text-lg font-semibold text-gray-700 cursor-pointer rounded-full transition-colors duration-300 relative z-20">Course</label>
+            <label htmlFor="povGolfCourse" className="flex-1 text-center py-3 px-4 text-sm font-semibold text-gray-700 cursor-pointer rounded-full transition-colors duration-300 relative z-20">Course</label>
 
             {/* Animated thumb for the toggle switch */}
             <div ref={toggleThumbRef} className="absolute bg-green-600 rounded-full shadow-lg transition-all duration-300 ease-in-out z-10"></div>

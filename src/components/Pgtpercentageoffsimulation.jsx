@@ -265,6 +265,7 @@ const AdminView = ({ onGenerateCoupon, allCoupons, onCopyCouponCode, onUpdateCou
         <form onSubmit={handleSubmit} className="space-y-8">
           {/* Coupon Basic Info */}
           <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Coupon Basic Information</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -562,7 +563,7 @@ const AdminView = ({ onGenerateCoupon, allCoupons, onCopyCouponCode, onUpdateCou
 
       {/* List of All Coupons */}
       {!showForm && (
-        <div className="mt-16 p-8 bg-gray-50 rounded-2xl shadow-xl border border-gray-200">
+        <div className="mt-16 py-8 px-4 bg-gray-50 rounded-2xl shadow-xl border border-gray-200">
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-2xl font-bold text-gray-800">All Generated Coupons</h3>
             <button
@@ -1293,7 +1294,7 @@ const PercentageForm = () => {
       `}
       </style>
 
-      <div className="bg-white rounded-3xl p-6  w-full max-w-md sm:max-w-5xl">
+      <div className="bg-white rounded-3xl p-2  w-full max-w-md sm:max-w-5xl">
         <h1 className="text-3xl sm:text-5xl font-extrabold text-gray-900 mb-2 text-center leading-tight">Paradise Golf Tech</h1>
         <h2 className="text-xl sm:text-3xl font-bold text-gray-700 mb-10 text-center">Golf Admin: Setup % Percentage Discount</h2>
 

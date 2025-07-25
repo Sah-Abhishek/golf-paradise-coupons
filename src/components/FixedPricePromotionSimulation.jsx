@@ -992,7 +992,7 @@ const GolferView = ({ promotions, simulationDate, setSimulationDate, proShopItem
   const MyMembershipCard = () => {
     const membership = membershipTiers.find(m => m.id === activeGolfer.membershipTier);
     return (
-      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl shadow-2xl p-6 text-white relative overflow-hidden">
+      <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl shadow-2xl py-6 px-4 text-white relative overflow-hidden">
         <div className="absolute -top-10 -right-10 w-32 h-32 bg-green-500 rounded-full opacity-20"></div>
         <div className="absolute bottom-4 left-4 w-20 h-20 bg-green-500 rounded-full opacity-10"></div>
         <div className="relative z-10 flex flex-col h-full">
@@ -1266,7 +1266,7 @@ const GolferView = ({ promotions, simulationDate, setSimulationDate, proShopItem
         </div>
 
         {/* Content Area */}
-        <div className="p-4 sm:p-6">
+        <div className="py-4 sm:py-6">
           {activeMenu === 'home' && <HomePage />}
           {activeMenu === 'teeTimes' && <TeeTimesPage />}
           {activeMenu === 'memberships' && <MembershipPage />}
@@ -1424,8 +1424,8 @@ const GolfCourseView = ({ promotions, setPromotions, simulationDate, golfers, se
           <button
             onClick={() => setActiveTab('redemption')}
             className={`${activeTab === 'redemption'
-                ? 'border-green-500 text-green-600'
-                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              ? 'border-green-500 text-green-600'
+              : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
               } whitespace-nowrap py-3 px-2 sm:px-4 border-b-2 font-medium text-sm sm:text-base`}
           >
             Coupon Redemption
@@ -1433,8 +1433,8 @@ const GolfCourseView = ({ promotions, setPromotions, simulationDate, golfers, se
           <button
             onClick={() => setActiveTab('manageTeeTimes')}
             className={`${activeTab === 'manageTeeTimes'
-                ? 'border-green-500 text-green-600'
-                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              ? 'border-green-500 text-green-600'
+              : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
               } whitespace-nowrap py-3 px-2 sm:px-4 border-b-2 font-medium text-sm sm:text-base`}
           >
             Manage Tee Times
@@ -1492,8 +1492,8 @@ const GolfCourseView = ({ promotions, setPromotions, simulationDate, golfers, se
           {redemptionStatus && (
             <div
               className={`mt-4 p-4 rounded-md text-sm ${redemptionStatus.type === 'success'
-                  ? 'bg-green-100 text-green-800'
-                  : 'bg-red-100 text-red-800'
+                ? 'bg-green-100 text-green-800'
+                : 'bg-red-100 text-red-800'
                 }`}
             >
               <div className="flex items-center">
