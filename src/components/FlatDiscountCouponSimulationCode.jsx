@@ -1391,7 +1391,7 @@ const MembershipCardView = ({ membershipCardData, onBack }) => {
         <div className="absolute inset-0 bg-black opacity-10 rounded-2xl transform -rotate-12 scale-125"></div>
         <div className="relative z-10 flex flex-col items-center">
           <img
-            src={membershipCardData.profilePicture}
+            src='/drpradeephaldar.jpeg'
             alt="Profile"
             className="w-24 h-24 rounded-full border-4 border-white shadow-lg mb-4"
           />
@@ -2155,7 +2155,7 @@ const FlatForm = () => {
 
     // Initialize sample membership card data
     const sampleMembershipCard = {
-      memberName: 'Alice Golfer',
+      memberName: 'Dr. Pradeed Haldar',
       memberId: 'PGT-GOLFER-001',
       membershipTier: 'Gold',
       expiryDate: formatDateForInput(new Date(today.getFullYear() + 1, 0, 31)), // Jan 31st next year
@@ -2179,7 +2179,7 @@ const FlatForm = () => {
         {`
                 @keyframes scaleIn {
                     from {
-                        transform: scale(0.95);
+                        transform: scale(0.95)
                         opacity: 0;
                     }
                     to {
