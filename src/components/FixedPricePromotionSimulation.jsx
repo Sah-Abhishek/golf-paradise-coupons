@@ -29,9 +29,9 @@ const initialTournaments = [
 ];
 
 const MOCK_GOLFERS = [
-  { id: 'golfer-01', name: 'John Doe', email: 'john.doe@example.com', membershipTier: 'year-around', isNew: false, redemptions: {}, lastActivityDate: '2025-07-15T10:00:00Z', dob: '1985-07-26', membershipValidUntil: '2026-03-31' },
-  { id: 'golfer-02', name: 'Jane Smith', email: 'jane.smith@example.com', membershipTier: 'summer', isNew: true, redemptions: {}, lastActivityDate: '2025-07-25T10:00:00Z', dob: '1992-03-15', membershipValidUntil: '2025-09-30' },
-  { id: 'golfer-03', name: 'Peter Jones', email: 'peter.jones@example.com', membershipTier: 'winter', isNew: false, redemptions: {}, lastActivityDate: '2024-01-10T10:00:00Z', dob: '1978-11-05', membershipValidUntil: '2025-12-31' },
+  { id: 'golfer-01', image: '/drpradeephaldar.jpeg', name: 'Dr. Pradeep Haldar', email: 'drpradeep.haldar@example.com', membershipTier: 'year-around', isNew: false, redemptions: {}, lastActivityDate: '2025-07-15T10:00:00Z', dob: '1985-07-26', membershipValidUntil: '2026-03-31' },
+  { id: 'golfer-02', name: 'Gregg Gagliardi  ', image: '/gregggagliardi.jpeg', email: 'gregg.gagliardi@example.com', membershipTier: 'summer', isNew: true, redemptions: {}, lastActivityDate: '2025-07-25T10:00:00Z', dob: '1992-03-15', membershipValidUntil: '2025-09-30' },
+  { id: 'golfer-03', name: 'Chris Talkington', image: '/christalkington.jpeg', email: 'chris.talkington@example.com', membershipTier: 'winter', isNew: false, redemptions: {}, lastActivityDate: '2024-01-10T10:00:00Z', dob: '1978-11-05', membershipValidUntil: '2025-12-31' },
 ];
 
 const initialTeeTimes = [
@@ -1002,7 +1002,7 @@ const GolferView = ({ promotions, simulationDate, setSimulationDate, proShopItem
           </div>
           <div className="flex-grow mt-4 flex items-center space-x-4">
             <div className="w-24 h-24 bg-gray-700 rounded-full flex items-center justify-center">
-              <UserCircle2 className="w-16 h-16 text-gray-500" />
+              <img src={activeGolfer.image} className=" h-27 rounded-full text-gray-500" />
             </div>
             <div>
               <p className="text-sm text-gray-400">Golfer</p>
